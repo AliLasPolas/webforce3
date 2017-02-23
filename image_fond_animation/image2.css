@@ -1,0 +1,19 @@
+div{
+    margin: 100px 0 0 0;
+}
+
+div img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid #f0f;
+    float: left;
+    margin: 15px;
+    transition: margin 0.5s;
+}
+
+div img:hover{
+    margin-top: 2px;
+}
+.clear{
+    clear:both;
+}

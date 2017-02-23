@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'truelies';
+    src: url('elements/true_lies-webfont.woff2') format('woff2'),
+         url('elements/true_lies-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'true_lies';
+    font-weight: : 2000;
+}

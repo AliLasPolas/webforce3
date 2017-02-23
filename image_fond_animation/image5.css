@@ -1,0 +1,22 @@
+div{
+    width: 1200px; /* Largeur */
+    margin: 0 auto; /* Marges */
+}
+
+div img{
+    width: 250px;
+    height: 250px;
+    margin: 20px; /* marges */
+    border: 5px solid #eee; /* bordure */
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2); /*ombre*/
+    transition: 1s; /**/
+}
+
+.aa:hover{
+    transform: rotate(10deg);
+}
+
+.rotation360:hover{
+    transition: 2s;
+    transform: rotateY(360deg);
+}
