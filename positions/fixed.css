@@ -1,0 +1,12 @@
+nav{
+    background: #dea5a5;
+    position: fixed; /* Le menu a une position fixée lors de la descente dans la page*/
+    text-align: center; /* Alignement du texte centré */
+    width: 100%; /*Largeur 100% de la fenetre*/
+    top: 0; /* Aligné a 0px du haut */
+    left: 0; /* Aligné a 0px a gauche */
+}
+#contenu{
+    border: 2px solid #369;
+    margin: 30px 0 0 0; /* marges haut (30px) droite(0px) bas(0px) gauche(0px)*/
+}

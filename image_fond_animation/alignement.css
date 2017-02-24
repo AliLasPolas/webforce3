@@ -1,0 +1,25 @@
+p{
+    display: table; /*simule le comportement d'un tableau*/
+}
+
+span{
+    display: table-cell; /*Une cellule <td> d'un tableau*/
+}
+
+img{
+    margin: 0 20px 0 0;
+    height: 200px;
+    width: 200px;
+}
+
+/*Margin/Padding : 10px 9px 8px 7px; 10px en haut, 9px a droite, 8px en bas, 7px a gauche*/
+
+/*Margin/padding: 10px 8x; 10px en haut et en bas, 8px a gauche et a droite*/
+
+/*Margin/padding: 10px; 10px partout*/
+
+/*Margin: marge a l'exterieur d'un bloc
+    Margin-left/margin-right/margin-top/margin-bottom*/
+
+/*Padding: marge a l'interieur d'un bloc
+    Padding-left/padding-right/padding-top/padding-bottom*/

@@ -1,0 +1,18 @@
+p{
+    margin: 0;
+}
+
+.orange{
+    color: #ff1000;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+div{
+    border: 5px solid #ccc;
+}
+
+/*La position absolue redéfinit l'emplacement de la zone par rapport a la fenetre. Ainsi en utilisant top : 50%, nous écartons du haut du site de 50%
+Avec top/left/right/bottom on gère la position de l'élément et non pas margin-left, margin-right, margin-top, margin-bottom*/

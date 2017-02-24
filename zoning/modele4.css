@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    height: 1000px;
+    width: 1000px;
+}
+
+.haut{
+    display: block;
+    align-self: center;
+    height: 1000px;
+    width: 1000px;
+    border: 2px solid black;
+    background: #088;
+
+}
+
+.menu{
+    margin-top: 40px;
+    display: block;
+    height: 775px;
+    width: 1000px;
+    background: #808;
+}
+
+.milieu{
+    border: 25px solid #fff;
+    display: block;
+    height: 700px;
+    width: 950px;
+    background: #ff0;
+}
