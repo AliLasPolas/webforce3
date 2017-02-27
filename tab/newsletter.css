@@ -1,0 +1,41 @@
+
+table{
+    border-spacing: 15px;
+    border-collapse: separate;
+    text-align: center;
+    margin: 0 auto;
+    border: 1;
+    width: 700px;
+}
+
+span{
+    display: block;
+}
+
+#cel1{
+    padding: 70px;
+}
+
+.cel2{
+    padding: 20px;
+}
+
+#cel3{
+    height: 150px;
+    color: #f00;
+    font-size: 20px;
+}
+
+#cel4{
+    padding: 50px;
+}
+
+td{
+    height: 25px;
+}
+
+
+td,th{
+    border: 1px solid;
+    margin: 15px;
+}

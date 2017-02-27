@@ -1,0 +1,25 @@
+table{
+    border-collapse: collapse;/*La propriété border-collapse détermine si les bordures sont séparées ou fusionnées*/
+    width: 700px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+th{
+    background: #0aa;
+}
+
+td,th{
+    padding: 7px;
+    border: 1px solid;
+    text-align: center;
+}
+
+/*
+th représente les entetes/colonnes du tableau
+tr représente une nouvelle ligne du tableau
+td représente une nouvelle cellule du tableau
+colspan permet de fusionner les cellules horizontalement
+rowspan permet de le faire verticalement
+la propriété border-collapse détermine si les bordures sont séparées ou fusionnées
+*/

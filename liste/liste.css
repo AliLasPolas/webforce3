@@ -1,0 +1,15 @@
+ul.fruit{
+    list-style-type: none;
+}
+
+ul.fruit li{
+    float: left;
+    margin: 15px;
+    background: url('list.png') left center no-repeat;
+    /*background-size: contain;*/
+    padding: 0 0 0 17px;
+}
+
+.clear{
+    clear: both;
+}

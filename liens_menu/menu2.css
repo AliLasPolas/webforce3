@@ -1,0 +1,17 @@
+nav a{
+    float: left;
+    height: 40px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    background: #000;
+    padding: 0 10px;
+    transition: 0.2s;
+    width: 10%;
+}
+
+nav a:hover{
+    background: #088;
+    transform: rotateX(360deg);
+}

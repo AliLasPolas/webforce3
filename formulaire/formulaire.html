@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Formuladas</title>
+        <link rel="stylesheet" href="formulaire.css">
+    </head>
+    <body>
+        <form method="post" enctype="multipart/form-data">
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" required> <br> <br>
+            <label for="mdp">Mot de passe:</label>
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required> <br> <br>
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br><br>
+            <label for="couriel">Couriel:</label>
+            <input type="email" name="Couriel" id="couriel" placeholder="Couriel"><br><br>
+            <label for="Avatar">Avatar:</label>
+            <input type="file" name="avatar" id=""><br><br>
+            <label for="pays">Pays</label>
+            <select id="pays" name="pays">
+                <optgroup label="Europe">
+                    <option value="fr" selected>France</option>
+                    <option value="it">Italie</option>
+                    <option value="es">Espagne</option>
+                </optgroup>
+            </select><br><br>
+            <label for="choix">Quel est votre fruit préféré ?</label>
+            <p>
+                <input type="checkbox" name="choix" value="" checked>Orange
+                <input type="checkbox" name="choix" value="">Fraise
+                <input type="checkbox" name="choix" value="">Poire
+
+            </p>
+        </form>
+    </body>
+</html>
