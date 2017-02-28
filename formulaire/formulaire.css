@@ -3,3 +3,7 @@ label{
     width: 200px;
     clear: both;
 }
+
+textarea{
+    resize: none; /*Permet de fixer la fenetre textarea*/
+}

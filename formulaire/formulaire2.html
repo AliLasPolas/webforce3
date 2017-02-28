@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infos</title>
+    <link rel="stylesheet" href="formulaire2.css">
+</head>
+<body>
+    <form enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Informations</legend>
+            <label for="jom">Nom:</label><br>
+            <input type="text" name="nom" id="nom" placeholder="Nom"><br>
+            <label for="prenom">Prénom:</label><br>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
+            <label for="telephone">Téléphone</label><br>
+            <input type="tel" pattern="[0-9]{10}" id="telephone" name="telephone" maxlength="10" placeholder="Numéro de téléphone"> <br>
+            <label for="ville">Ville</label><br>
+            <input type="text" name="ville" id="ville" list="france" placeholder="Entrez votre ville"><br>
+            <label for="cp">Code Postal</label><br>
+            <input type="text" name="cp" id="cp" maxlength="5" pattern="[0-9][5]" title="5 chiffres requis entre 0 et 9" placeholder="Code Postal"> <br>
+            <label for="adresse">Adresse</label><br>
+            <textarea name="adresse" id="adresse" rows="4" cols="21" placeholder="Entrez votre adresse"></textarea> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Date de Naissance</legend>
+            <div id="date">
+                <label for="jour">Jour</label><br><br>
+                <label for="mois">Mois</label><br><br>
+                <label for="annee">Année</label>
+
+            </div>
+            <select id="jours" name="jour">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select> <br> <br>
+            <select id="mois" name="mois">
+                <option>Janvier</option>
+                <option>Février</option>
+                <option>Mars</option>
+                <option>Avril</option>
+                <option>Mai</option>
+                <option>Juin</option>
+                <option>Juillet</option>
+                <option>Aout</option>
+                <option>Septembre</option>
+                <option>Octobre</option>
+                <option>Novembre</option>
+                <option>Décembre</option>
+            </select> <br> <br>
+            <select id="annee" name="annee">
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+            </select>
+        </fieldset>
+        <fieldset id="civil">
+            <legend>Civilité</legend>
+            <div>
+                <label for="genre">Homme</label> <br> <br>
+                <label for="genre">Femme</label>
+            </div>
+            <input type="radio" name="genre" value="femme"> <br> <br>
+            <input type="radio" name="genre" value="homme">
+
+        </fieldset>
+        <fieldset>
+            <legend>Informations Facultatives</legend>
+            <label for="description">Description</label><br>
+            <textarea name="description" rows="4" cols="21" placeholder="Description"></textarea>
+        </fieldset>
+        <input id=submit type="submit" name="inscription" value="Inscription">
+    </form>
+</body>
+</html>
+
+
+<!--
+method:comment faire circuler les données ? post, get;
+action : url de destination;
+enctype : multipart-data/form : pour envoyer des fichiers;
+label = etiquette (indication);
+for = nom relié au fa-bordertextarea = zone de saisie - rows vertical, cols : horizontal;
+input = elément du formulaire;
+    id = nom relié au fa-border;
+    type = text - case de saisie;
+    type = password - cas de saisie cryptée;
+    type = email - case de saisie format mail;
+    type = file - upload de fichiers;
+    type = checkbox - case a cocher;
+    type = radio - case a cocher unique;
+    type = hidden - champ caché;
+    list = permet de s'alimenter de suggestion avec une list-item;
+    name = nom pour future récupération en php;
+    required = permet de rendre le champ obligatoire;
+    disabed = désactive la saisie;
+    placeholder = indication présaisie;
+    maxlenght = longueure maximale;
+    pattern = expression régulière avec liste de caractères autorisés - title permet de personaliser le message d'erreur dans l'infobulle;
+    select = liste déroulante;
+    option = option;
+    datalist = contient la liste d'options en cas de suggestion demandé dans l'attribut liste;
+-->

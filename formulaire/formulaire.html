@@ -39,7 +39,28 @@
                 <option>Paris</option>
                 <option>Marseille</option>
                 <option>Lyon</option>
-            </datalist> <br>
+            </datalist> <br> <br>
+            <label for="cp">Code Postal</label>
+            <input type="text" name="cp" id="cp" maxlength="5" pattern="[0-9][5]" title="5 chiffres requis entre 0 et 9" placeholder="Code Postal"> <br> <br>
+            <label for="adresse">Adresse</label>
+            <textarea name="adresse" id="adresse" rows="4" cols="21" placeholder="Entrez votre adresse"></textarea> <br> <br>
+            <label for="datedenaissance">Date de naissance</label>
+            <input type="date" name="datedenaissance" id="datedenaissance"> <br> <br>
+            <label for="jauge">Jauge</label>
+            <input type="range" min="25" max="50" value="26" name="" id="jauge"> <br><br>
+            <label for="telephone">Téléphone</label>
+            <input type="tel" pattern="[0-9]{10}" id="telephone" name="telephone" maxlength="10" placeholder="Numéro de téléphone"> <br><br>
+            <label for="recherche">Recherche</label>
+            <input type="text" name="recherche" patern="[a-zA-Z0-9.-_]+" title="Caractères autorisés : a-aA-Z0-9.-_" id="recherche" placeholder="Terme a rechercher..."> <br><br>
+            <label for="couleur">Couleur</label>
+            <input type="color" id="couleur" name="couleur"> <br><br>
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar" multiple><br><br>
+            <input type="hidden" id="cache" name="cache">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" value="test" disabled> <br> <br>
+            <input type="submit" name="inscription" value="S'inscrire">
+            <input type="reset" name="efface" value="Recommencer">
         </form>
     </body>
 </html>
