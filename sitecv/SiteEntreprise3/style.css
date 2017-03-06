@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
+    background-color: #ddd;
+}
+
+header{
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+}
+
+h1{
+    height: 70%;
+    background-color: #ddd;
+}
+
+nav{
+    background-color: #D9255D;
+    border-top: 2px solid #9F9D9D;
+    height: 29%;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+
+footer{
+    height: 12%;
+}

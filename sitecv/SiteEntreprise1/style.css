@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+header{
+    height: 12%;
+    background: yellow;
+    }
+    #headH{
+        height: 75%;
+        background: #ddd;
+        padding: 0 15%;
+        }
+        #headH img:first-of-type{
+            float: left;
+        }
+        #headH h1{
+            display: inline-block;
+            color: #fff;
+            font-size: 38px;
+        }
+        #headH h2{
+            display: inline-block;
+            float: right;
+            padding-right: 10px;
+            font-size: 30px;
+            font-style: italic;
+            color: #5CC0FA;
+        }
+        #headH p{
+            display: inline-block;
+            font-size: 18px;
+        }
+        #headH p:first-of-type{
+            color: #5CC0FA;
+            float: right;
+            background: url('aide.png') center left no-repeat;
+            width: 170px;
+            text-align: right;
+        }
+        #headH p:nth-of-type(2){
+            font-style: italic;
+        }
+        #headH p:nth-of-type(3){
+            float: right;
+            color: #999;
+            font-style: italic;
+        }
+
+    #headB{
+        padding: 0 15%;
+        height: 25%;
+        background: #5CC0FA;
+        text-align: center;
+        border-top: 1px solid #08f;
+        border-bottom: 1px solid #08f;
+        }
+        #headB nav{
+            padding-left: 10%;
+        }
+        #headB nav ul li{
+            display: inline-block;
+            padding: 3px 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+    section{
+        background-color: #fff;
+        height: 78%;
+        margin-top: 2px;
+        padding: 0 15%;
+        }
+
+    #texte {
+        height: 100%;
+        width: 70%;
+        /*background-color: red;*/
+        float: left;
+    }
+    #texte h1{
+        /*display: inline-block;*/
+    }
+    #texte img{
+        float: right;
+        box-shadow: 5px;
+    }
+    #texte ul li{
+        list-style-type:circle;
+    }
+    #ads {
+        float: left;
+        height: 100%;
+        width: 30%;
+        /*background-color: green;*/
+    }
+    table{
+        margin: 2% 15%;
+        width: 70%;
+        height: 30%;
+        text-align: center;
+        border: 1px grey solid;
+        border-radius: 15px;
+    }
+    th{
+        background-color: #bbb;
+        width: 100%;
+        border-radius: 15px;
+
+    }
+    td{
+        background-color: #fff;
+
+    }
+
+    footer{
+        padding: 0 15%;
+        border-top: 2px solid #aaa;
+        height: 10%;
+        width: 70%;
+        background-color: #ddd;
+    }
+    footer nav ul li{
+        display: inline-block;
+        padding: 5px 10px;
+    }

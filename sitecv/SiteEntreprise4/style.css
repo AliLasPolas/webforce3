@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    height: 100%;
+}
+
+#header{
+    height: 110px;
+    width: 100%;
+    /*background-color: yellow;*/
+    border-bottom: #28f 1px solid;
+    }
+
+#leftnav, #rightnav{
+    width:25%;
+    height: 100%;
+    float: left;
+}
+
+#leftnav{
+    background: url('logo.jpg') right no-repeat;
+    background-size: contain;
+}
+
+#rightnav{
+    /*background: blue;*/
+    }
+
+#middlenav{
+    width: 50%;
+    height: 100%;
+    /*background-color: red;*/
+    float: left;
+    }
+    #middlenav p{
+        padding: 10px 0 0 10px;
+        position: absolute;
+        font-size: 22px;
+        font-weight: bold;
+        color: #28f;
+    }
+    #middlenav ul{
+        padding: 80px 0 0 110px;
+        }
+        #middlenav ul li{
+            display: inline-block;
+            font-size: 18px;
+            padding: 0 15px;
+            }
+            #middlenav ul li a{
+                color: #000;
+            }
+
+
+
+section{
+    width: 100%;
+    min-height: 740px;
+    /*background-color: pink;*/
+}
+
+#container{
+    width: 65%;
+    height: 740px;
+    margin: 0 15%;
+    /*background-color: #555;*/
+    float: left;
+}
+
+#left{
+    background: linear-gradient(to bottom, #ccc, white, white);
+
+    margin-top: 30px;
+    width: 50%;
+    height: 90%;
+    /*background-color: #088;*/
+    float: left;
+    }
+    #media{
+        font-size: 22px;
+        line-height: 30px;
+        width: 550px;
+        padding: 10px;
+        }
+        #media h2{
+            display: inline-block;
+        }
+        #actu1, #actu2, #actu3{
+            padding: 10px;
+        }
+        #actu h2{
+            padding: 20px 0;
+            background: url('fleche_gauche.png') left center no-repeat;
+            text-align: center;
+        }
+        #actu img{
+            padding: 20px 20px 0 0;
+            float: left;
+        }
+        #actu p{
+            padding-top: 10px;
+            font-size: 18px;
+            display: block;
+            width: 350px;
+            height: 120px;
+            float: left;
+            padding-right: 50px;
+            border-bottom: solid 1px #ccc;
+        }
+
+
+#right{
+    background: linear-gradient(to bottom, #ccc, white, white);
+
+    margin-top: 30px;
+    width: 50%;
+    height: 90%;
+    /*background-color: #0ee;*/
+    float: left;
+    }
+    #right h2{
+        background: url('fleche_gauche.png') left center no-repeat;
+        text-align: center;
+    }
+    #map{
+        background: url('carte-monde.gif') no-repeat center;
+        background-size: contain;
+        height: 280px;
+        width: 630px;
+    }
+        #contact p{
+            border-radius: 15px;
+            padding: 5px 0 0 0;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 5px 0 12px 75px;
+            height: 35px;
+            width: 450px;
+            display: block;
+            background-color: #333;
+            text-align: center;
+            }
+    #googlemaps{
+        padding-left: 75px;
+    }
+
+
+
+h2{
+    font-size: 30px;
+    color: #28f;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    text-align: center;
+    }
+    footer nav ul li{
+        display: inline-block;
+        padding: 20px 10px 10px 10px;
+        font-size: 18px;
+        }
+        footer nav ul li a{
+        color: #28f;
+        }
+    footer p{
+        color: #fff;
+        font-size: 19px;
+    }
+
+    .en{
+        position: absolute;
+        color: transparent;
+        border: transparent;
+        }
+        .en h2{
+            color: transparent;
+        }
+        .en p{
+            display: block;
+        }
+
+
+.clear{
+    clear: both;
+}

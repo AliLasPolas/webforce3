@@ -242,37 +242,11 @@ footer p a{
 }
 
 
-
-
 #footer{
     width: 60%;
     height: 100px;
     /*background-color: #808;*/
     margin: 0 20%;
-}
-
-#container4,#container5{
-    margin: 20px 0 0 0;
-    width: 50%;
-    float: left;
-}
-
-#container4 input{
-    width: 70%;
-    height: 25px;
-}
-#container4 input:last-of-type{
-    width: 15%;
-    height: 25px;
-}
-
-#container5{
-    background: url('img/email.jpg') top center no-repeat;
-    padding: 320px 0 0 0;
-}
-
-iframe{
-    padding-left: 70px;
 }
 
 #cv1{

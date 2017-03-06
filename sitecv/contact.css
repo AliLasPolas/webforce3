@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style-type: none;
 }
 
 body{
@@ -129,6 +127,7 @@ section{
     font-size: 20px;
     color: #499;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 #subcont3 ul li{
@@ -242,8 +241,6 @@ footer p a{
 }
 
 
-
-
 #footer{
     width: 60%;
     height: 100px;
@@ -273,101 +270,4 @@ footer p a{
 
 iframe{
     padding-left: 70px;
-}
-
-#cv1{
-    width: 30%;
-    float: left;
-}
-
-#cv1 ul li{
-    color: #499;
-    margin: 5px;
-    background: url('img/fleche2.png') center left no-repeat;
-    padding: 0 0 0 30px;
-
-}
-
-#cv2{
-    width: 70%;
-    float: left;
-}
-
-#comp{
-    position: absolute;
-    color: #fff;
-    text-indent: -2000px;
-    transition: 1.5s;
-
-}
-
-#comp:target{
-    color: #000;
-    position: absolute;
-    text-indent: 0;
-}
-#activ{
-    color: #fff;
-    position: absolute;
-    text-indent: -2000px;
-    transition: 1.5s;
-
-}
-
-#activ:target{
-    color: #000;
-    position: absolute;
-    text-indent: 0;
-}
-#exp{
-    color: #fff;
-    position: absolute;
-    text-indent: -2000px;
-    transition: 1.5s;
-
-}
-
-#exp:target{
-    color: #000;
-    position: absolute;
-    text-indent: 0;
-}
-#logi{
-    color: #fff;
-    position: absolute;
-    text-indent: -2000px;
-    transition: 1.5s;
-
-}
-
-#logi:target{
-    color: #000;
-    position: absolute;
-    text-indent: 0;
-}
-#lang{
-    color: #fff;
-    position: absolute;
-    text-indent: -2000px;
-    transition: 1.5s;
-
-}
-
-#lang:target{
-    color: #000;
-    position: absolute;
-    text-indent: 0;
-}
-#loisir{
-    color: #fff;
-    position: absolute;
-    text-indent: -2000px;
-    transition: 1.5s;
-
-}
-
-#loisir:target{
-    color: #000;
-    position: absolute;
-    text-indent: 0;
 }
