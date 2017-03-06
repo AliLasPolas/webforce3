@@ -1,11 +1,7 @@
-html{
-    width: 100vw;
-}
-
 body{
-    padding: 0 5%;
+    margin: 0 auto;
     height: 900px;
-    width: 100%;
+    width: 900px;
 }
 
 p{
@@ -27,43 +23,43 @@ nav{
     background-color: cyan;
 }
 
-    .block p{
+    .a,.b,.c,.d,.e,.f,.g{
         float: left;
         margin: 0;
     }
 
-        .block p:nth-of-type(1){
-            width: 25%;
+        .a{
+            width: 225px;
             height: 250px;
             background-color: #f00;
         }
-        .block p:nth-of-type(2){
-            width: 50%;
+        .b{
+            width: 450px;
             height: 250px;
             background-color: #00b;
         }
-        .block p:nth-of-type(3){
-            width: 25%;
+        .c{
+            width: 225px;
             height: 250px;
             background-color: #090;
         }
-        .block p:nth-of-type(4){
-            width: 100%;
+        .d{
+            width: 900px;
             height: 250px;
             background-color: #fcc;
         }
-        .block p:nth-of-type(5){
-            width: 25%;
+        .e{
+            width: 225px;
             height: 250px;
             background-color: #808;
         }
-        .block p:nth-of-type(6){
-            width: 50%;
+        .f{
+            width: 450px;
             height: 250px;
             background-color: #900;
         }
-        .block p:nth-of-type(7){
-            width: 25%;
+        .g{
+            width: 225px;
             height: 250px;
             background-color: #888;
         }
@@ -73,7 +69,25 @@ footer{
     background-color: #d00;
 }
 
+@media screen and (max-width: 1050px){
+    .block{width:750px;}
+    .a,.b,.c,.d,.e,.f,.g{width: 250px;}
+    .d{width: 750px}
+    header, footer, nav{width: 750px}
+}
+@media screen and (max-width: 780px){
+    .block {width:570px;}
+    .a,.b,.c,.e,.f,.g {width: 190px;}
+    .d{width: 570px}
+    header, footer, nav {width: 570px}
+}
+@media screen and (max-width: 580px){
+    .block {width:100%;}
+    .a,.b,.c,.d,.e,.f,.g {width: 100%; height: 125px}
+    
+    header, footer, nav {width: 100%}
 
+}
 
 .clear{
     clear: both;
