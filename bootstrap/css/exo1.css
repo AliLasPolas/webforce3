@@ -1,0 +1,41 @@
+.container{
+    border: 2px solid;
+    /*padding: 0;*/
+}
+
+header{
+    height: 120px;
+    padding: 5px;
+}
+
+nav{
+    height: 50px;
+    padding: 7px;
+
+}
+
+section{
+    padding: 5px;
+    height: 500px;
+}
+
+footer{
+    padding: 7px;
+    height: 60px;
+}
+div{
+    height: 100%;
+}
+
+.red{
+    border: 3px solid red;
+}
+.orange{
+    border: 3px solid orange;
+}
+.blue{
+    border: 3px solid blue;
+}
+.green{
+    border: 3px solid green;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Las grillas del bootstrapas</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device_width, initial-scale=1">
+    </head>
+    <body>
+        <!--
+        La classe .container prédéfinie dans la feuille de style bootstrap .css(a laquelle nous sommes reliés) permet d'englober le reste de notre code et de le centrer sur la page web.
+
+        La classe .row prédéfinie dans la feuille de style bootstrap.css permet de prendre une ligne dans notre grille
+
+        col veut dire collonne
+        md veut dire middle
+        1 veut dire 1 emplacement , les chiffres s'expriment en nombre d'emplacements, cette partie variable pourra prendre les valeurs de 1 a 12
+
+        1. xs = extra small screen (mobile - écran petit - 0 a 768px)
+        2. sm = small screens (tablettes - écran réduit - 768px a 992px)
+        3. md = medium screen (ordinateur portable - écran moyen - 992px a 1200px)
+        4. lg = large screen (ordinateur de bureau - grand écran - plus de 1200 px)
+
+         -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 bordureRouge"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 bordureVert"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5 bordureBleu"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 bordureRouge"></div>
+                <div class="col-md-3 bordureVert"></div>
+                <div class="col-md-3 bordureJaune"></div>
+                <div class="col-md-3 bordureOrange"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 bordureBleu"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-2 bordureRouge"></div>
+                <div class="col-md-3 col-md-offset-2 bordureVert"></div>
+            </div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-xs-6 bordureOrange"></div>
+                <div class="col-xs-6 bordureRouge"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 bordureVert"></div>
+                <div class="col-lg-6 bordureBleu"></div>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 bordureBleu"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1 bordureVert"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 bordureOrange"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 bordureRouge"></div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 bordureOrange"></div>
+                <div class="col-xs-6 bordureBleu"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 bordureOrange"></div>
+                <div class="col-lg-6 bordureBleu"></div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 bordureRouge">Colonne 1</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 bordureVert">Colonne 2</div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-5 col-lg-4 bordureRouge">
+                    Zone gauche
+                </div>
+                <div class="col-xs-6 col-sm-5 col-lg-4 bordureVert">
+                    Zone Milieu
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2 col-lg-4 bordureBleu">
+                    Zone Droite
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
