@@ -1,0 +1,192 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;;
+    height: 218vh;
+    background-color: crimson;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #088;
+}
+div{
+    height: 100%;
+    border: 1px red solid;
+}
+header{
+    height: 26vh;
+    background-color: yellow;
+    }
+    #prehead{
+        height: 10%;
+        background-color: #616161;
+        padding: 0 5%;
+        color: #fff;
+        }
+        #prehead p{
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            /*padding-bottom: 2px;*/
+            }
+            #prehead div:nth-of-type(2){
+                text-align: center;
+                }
+            #prehead div:nth-of-type(3){
+                text-align: right;;
+                }
+        #prehead span{
+            font-style: italic;
+        }
+    #mainhead{
+        height: 72%;
+        background-color: #f8f8f8;
+        padding: 0 5%;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 4.5em;
+        }
+        h1 span{
+            background-color: #F62775;
+            color: white;
+        }
+        #mainhead p{
+            font-size: 1em;
+            font-style: italic;
+            display: inline-block;
+        }
+
+        .fr{
+            height: 50%;
+            width: 50%;
+            float: left;
+            padding: 0 0 0 85px ;
+        }
+        .fr:nth-child(1){
+            background: url('../img/money.png') no-repeat;
+            background-size: 64px;
+        }
+        .fr:nth-child(2){
+            background: url('../img/account.png') no-repeat ;
+            background-size: 64px;
+            background-position: 70% top;
+        }
+        .fr:nth-of-type(3){
+            background: url('../img/contact.png') no-repeat;
+            background-size: 64px;
+        }
+        .fr:nth-of-type(4){
+            background: url('../img/basket.png') no-repeat ;
+            background-size: 64px;
+            background-position: 70% top;
+
+        }
+        #mainhead span h4{
+            display: inline-block;
+            margin: 15px 0 0 0;
+        }
+        #mainhead span img{
+            height: 64px;
+        }
+    nav{
+        height: 18%;
+        background-color: #f2f2f2;
+        /*padding: 0 4%;*/
+        }
+        nav div{
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 7px 0;
+            border: 1px solid #eee;
+            box-shadow: top 5px;
+        }
+        nav div:first-of-type{
+            padding: 4px 0;
+        }
+        nav div:last-of-type{
+            padding: 0;
+        }
+section{
+    height: 190vh;
+    background-color: #fff;
+    width: 100%;
+    }
+    #carous{
+        height: 30%;
+        }
+        #large-image{
+            padding: 0.71% 1.5%;
+        }
+        #large-image img{
+            height: 100%;
+        }
+
+        .sm{
+            height: 50%;
+            padding: 3%;
+        }
+        .sm img{
+            width: 75%;
+            height: 85%;
+            margin-left: 13%;
+        }
+        .sm span{
+            margin-left: 13%;
+            display: block;
+            background-color: #F62775;
+            color: #fff;
+            font-weight: bold;
+            width: 75%;
+            height: 15%;
+            text-align: center;
+        }
+    #garanties{
+        height: 7%;
+    }
+    #prd-bd{
+        height: 3%;
+    }
+    .prd-img{
+        height: 19%;
+    }
+    #eshop-bd{
+        height: 3%;
+    }
+    #eshop-cont{
+        height: 19%;
+    }
+footer{
+    height: 74vh;
+    background-color: #f5f5f5;
+    width: 100%;
+    }
+    #footer-left,#footer-right{
+        height: 90%;
+        float: left;
+    }
+    #footer-left{
+        width: 75%;
+        }
+        #row1{
+            height: 35%;
+        }
+        #row2{
+            height: 65%;
+        }
+    #footer-right{
+        width: 25%;
+    }
+.container-fluid:nth-child(2){
+    padding: 0 5%;
+}
+.container-fluid:nth-child(3){
+    padding: 0 5%;
+}
