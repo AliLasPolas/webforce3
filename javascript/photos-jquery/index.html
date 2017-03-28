@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <style>
+    *{
+        list-style-type: none;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        width: 800;
+        height: 900px;
+    }
+    li{
+        margin: 1em;
+        padding: 0.5em;
+        display: inline-block;
+        transition: 0.3s;
+        border-radius: 15px;
+    }
+    li:hover{
+        background-color: silver;
+
+    }
+    .selected{
+        background-color: green;
+    }
+    .selected:hover{
+        background-color: green;
+    }
+    span{
+        color: red;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sélecteur de Photos</h1>
+    </header>
+
+    <main>
+        <ul class="photo-list">
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <br>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+            <li><img src="https://placehold.it/96"></li>
+        </ul>
+
+        <p id="total">Vous avez sélectionné <em>0</em> photo(s)</p>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

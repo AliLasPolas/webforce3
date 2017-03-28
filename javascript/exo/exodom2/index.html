@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .fifty{
+            height: 500px;
+            width: 250px;
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .rond1,.rond2,.rond3{
+            border-radius: 100%;
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+        }
+        </style>
+</head>
+<body>
+    <p>FEUX TRICOLORES</p>
+    <div class="fifty">
+        <div class="rond1"></div>
+        <div class="rond2"></div>
+        <div class="rond3"></div>
+    </div>
+    <div class="fifty">
+        <div class="rond3"></div>
+        <div class="rond2"></div>
+        <div class="rond1"></div>
+    </div>
+    <div class="clear"></div>
+    <p>Bouton de commande</p>
+    <button type="button" name="button" id="btn2">Vert</button>
+    <button type="button" name="button" id="btn3">Jaune</button>
+    <button type="button" name="button" id="btn1">Rouge</button>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

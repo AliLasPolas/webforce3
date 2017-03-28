@@ -119,9 +119,40 @@ section{
     background-color: #fff;
     width: 100%;
     }
+
     #carous{
         height: 30%;
         }
+        #caro{
+            width: 50%;
+            height: 80%;
+            overflow: hidden;
+            float: left;
+        }
+        #caro img{
+            width: 20%;
+            height: 100%;
+        }
+        #caro figure{
+            width: 500%;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            text-align: left;
+            position: relative;
+            animation: 30s slidy infinite;
+            }
+            @@keyframes slidy {
+                0% { left: 0%;}
+                20% { left: 0%;}
+                25% { left: -100%;}
+                45% { left: -100%;}
+                50% { left: -200%;}
+                70% { left: -200%;}
+                75% { left: -300%;}
+                95% { left: -300%;}
+                100% { left: -400%;}
+            }
         #large-image{
             padding: 0.71% 1.5%;
         }

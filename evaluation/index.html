@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- Inclusion des métadonnées de base -->
+        <link rel="stylesheet" href="elements/css/font-awesome.min.css">
+        <link rel="stylesheet" href="elements/css/style.css"><!-- Lien de la fiche css dans le dossier css et de fontawesome -->
+        <title>My Unicorn</title><!-- Titre -->
+    </head>
+    <body>
+        <header>
+            <span>
+                MyUnicorn
+            </span>
+            <!-- span pour le logo du site myunicorn a gauche du header -->
+            <div>
+
+            </div>
+            <!-- Div pour l'espace entre le logo et la nav -->
+            <nav>
+                <ul>
+                    <li><a href="#principe">LE PRINCIPE</a></li>
+                    <li><a href="#licornes">NOS LICORNES</a></li>
+                    <li><a href="#trouver">NOUS TROUVER</a></li>
+                </ul>
+            </nav><!-- Le menu sera fait avec une nav et une list non-ordonée, le style de base de la liste est supprimé en css pour laisser place au style personalisé rose du site -->
+        </header>
+        <section>
+            <h1>Un jour, une licorne</h1>
+            <div class="container1"> <!-- Container principal du contenu, dans lequel sont placés des div de class block pour les trois sous-parties -->
+                <div class="block">
+                    <h2 id="principe"><i class="fa fa-star-o" aria-hidden="true"></i>
+                     Le principe</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <!-- Ce premier block contient uniquement un titre 2 et du texte. -->
+                <div class="block">
+                    <h2 id="licornes"> <i class="fa fa-star-o" aria-hidden="true"></i>
+                    Nos licornes</h2>
+                    <div class="licorne">
+                        <figure>
+                            <img src="img/unicorns/photo1.jpg" alt="Photo d'une licorne nommée Lulu Confetty">
+                          <figcaption>Lulu Confetty</figcaption>
+                        </figure>
+                    </div>
+                    <div class="licorne">
+                        <figure>
+                            <img src="img/unicorns/photo2.jpg" alt="Image dessinée d'un animal mi-lapin mi-papillon mi-licorne arc-en-ciel Prénommée Lapillon Magik">
+                          <figcaption>Lapillon Magik</figcaption>
+                        </figure>
+                    </div>
+                    <div class="licorne">
+                        <figure>
+                            <img src="img/unicorns/photo3.jpg" alt="Représentation picturale d'une licorne technicolore dont la pratique du ninjutsu distingue de ses pairs dont l'appelation est El Ninjacorn (a prononcer avec l'accent adéquat)">
+                          <figcaption>El Ninjacorn</figcaption>
+                        </figure>
+                    </div>
+                    <div class="licorne">
+                        <figure>
+                            <img src="img/unicorns/photo4.jpg" alt="Un bonbon en forme de licorne">
+                          <figcaption>Sweet Candy</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Pour chaque image une div .licorne a été créée, dans laquelle est placée la balise <figure> qui contient elle meme une image et une légende. Les description alt ont été ajoutée au cas ou des non-voyants voudraient acheter une licorne. -->
+                <div class="block">
+                    <h2 id="trouver"><i class="fa fa-star-o" aria-hidden="true"></i>
+                    Nous trouver</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0045052931932!2d2.2963480160283427!3d48.85812447928748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe0141842bd%3A0x41bc4bbb0d80c803!2sUnicorn!5e0!3m2!1sfr!2sfr!4v1489656197018" ></iframe>
+                    <div class="info">
+                        <h3>Notre élevage de licornes est situé au :</h3><br>
+                        <p>18 Rue Geoffroy l'Asnier</p>
+                        <p>75004 Paris</p>
+                        <p>01.23.45.67.89</p>
+                    </div>
+                    <div class="info">
+                            <form action="/newsletter.php">
+                            <h3>Newsletter</h3><br>
+                            <p>Abonnez-vous simplement a notre newsletter mensuelle !</p><br>
+                            <input id="email" type="email" name="couriel"  placeholder="votre@email.fr"><br> <br>
+                            <input id="submit" type="submit" name="submit" value="Valider">
+                        </form>
+                    </div>
+                </div>
+                <!-- Dans ce dernier block se trouve la carte google map en iframe et le formulaire de newsletter. La balise iframe de google maps a été déprivée des balises style intégrées initialement par google maps, et le formulaire consiste uniquement d'un email et d'un submit qui redirige vers la page newsletter.php pour l'instant inexistante -->
+            </div>
+        </section>
+        <footer>
+            <div></div>
+            <span>2016 @ WebForce3</span>
+        </footer>
+        <!-- Une div a été utilisée pour l'espace vide et un span pour la zone du texte de copyright -->
+    </body>
+</html>
