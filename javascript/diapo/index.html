@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-<h1>Sliders</h1>
-
-<nav class="toolbar">
-<button type="button" name="button" id="previous"><i class="fa fa-step-backward" aria-hidden="true"></i>
-</button>
-<button type="button" name="button" id="toggle"><i class="fa fa-play" aria-hidden="true"></i>
-</button>
-<button type="button" name="button" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i>
-</button>
-<button type="button" name="button" id="random"><i class="fa fa-random" aria-hidden="true"></i>
-</button>
-</nav>
-
-<figure>
-    <img src="" alt="">
-    <figcaption></figcaption>
-</figure>
-
-<script src="utility.js"></script>
-<script src="script.js"></script>
+    <h1>Sliders</h1>
+    <a id="toolbar-toggle" href="#">Cliquez pour faire apparaitre l'icone.</a>
+    <nav class="toolbar hide">
+                <button type="button" name="button" id="slider-previous"><i class="fa fa-step-backward" aria-hidden="true"></i>
+                </button>
+                <button type="button" name="button" id="slider-toggle"><i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+                <button class="hide" type="button" name="button" id="slider-stop"><i class="fa fa-stop" aria-hidden="true"></i>
+                </button>
+                <button type="button" name="button" id="slider-next"><i class="fa fa-step-forward" aria-hidden="true"></i>
+                </button>
+                <button type="button" name="button" id="slider-random"><i class="fa fa-random" aria-hidden="true"></i>
+                </button>
+    </nav>
+    <figure class="slider">
+        <img src="images/1.jpg" alt="">
+        <figcaption>Street Art</figcaption>
+    </figure>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="utility.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
