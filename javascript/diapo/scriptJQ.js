@@ -7,53 +7,50 @@ var slides =
     { image: 'images/5.jpg', legend: 'City by night'       },
     { image: 'images/6.jpg', legend: 'Tour Eiffel la nuit' }
 ];
-var btn_toggle = $("#toolbar-toggle")
-var btn_previous = $("#slider-previous")
-var btn_play = $("#slider-toggle")
-var btn_stop = $("#slider-stop")
-var btn_next = $("#slider-next")
-var btn_random = $("#slider-random")
 var number = 1;
-var d
 var timer
-
+function refresh(n){
+    $('img').attr('src',slides[number].image)
+    $('figcaption').attr('textContent', slides[number].legend)
+}
 function display(){
     $("nav").toggleClass("hide")
 }
 function previous(){
     number--
-    if (number == 0) {
-        number = 6
+    if (number == -1) {
+        number = 5
     }
-    $('img').src="images/" + number + ".jpg"
+    refresh()
 }
 
 function play(){
-    timer = setInterval(play, 2000);
-        if (number == 7) {
-            number = 1
-        }
-        $('img').src="images/" + number + ".jpg"
-        number++
-
+    $('#slider-toggle').toggleClass('hide')
+    $('#slider-stop').toggleClass('hide')
+    timer= setInterval(next, 2000);
 }
 
+function stop(){
+    $('#slider-toggle').toggleClass('hide')
+    $('#slider-stop').toggleClass('hide')
+    clearInterval(timer);
+}
 
 function next(){
     number++
-    if (number == 7) {
-        number = 1
+    if (number == 6) {
+        number = 0
     }
-    document.querySelector('img').src="images/" + number + ".jpg"
+    refresh()
 }
 function rand(){
-    number = getRandomInteger(1, 6);
-    document.querySelector('img').src="images/" + number + ".jpg"
+    number = getRandomInteger(0, 5);
+    refresh()
 }
 
-btn_toggle.on('click', display)
-btn_previous.on('click', previous)
-btn_play.on('click', play)
-btn_stop.on('click', stop)
-btn_next.on('click', next)
-btn_random.on('click', rand)
+$("#toolbar-toggle").on('click', display)
+$("#slider-previous").on('click', previous)
+$("#slider-toggle").on('click', play)
+$("#slider-stop").on('click', stop)
+$("#slider-next").on('click', next)
+$("#slider-random").on('click', rand)

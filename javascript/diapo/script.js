@@ -7,12 +7,14 @@ var slides =
     { image: 'images/5.jpg', legend: 'City by night'       },
     { image: 'images/6.jpg', legend: 'Tour Eiffel la nuit' }
 ];
+
 var btn_toggle = document.querySelector("#toolbar-toggle")
 var btn_previous = document.querySelector("#slider-previous")
 var btn_play = document.querySelector("#slider-toggle")
 var btn_stop = document.querySelector("#slider-stop")
 var btn_next = document.querySelector("#slider-next")
 var btn_random = document.querySelector("#slider-random")
+var clavier;
 var number = 1;
 var timer
 
@@ -54,6 +56,9 @@ function rand(){
     number = getRandomInteger(0, 5);
     refresh()
 }
+
+
+
 
 btn_toggle.addEventListener('click', display)
 btn_previous.addEventListener('click', previous)
