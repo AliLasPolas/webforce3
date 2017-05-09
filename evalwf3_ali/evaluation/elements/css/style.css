@@ -1,0 +1,188 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} /* Reset du css fourbe de la page*/
+
+
+body{
+    height: 200vh;
+    width: 100%;
+    background: url('../img/background.png');
+    font-family: Arial, sans-serif;
+    }/*Taille définie pour le body (hauteur en vh et largeur en %) ainsi que la police de base et le background*/
+
+
+h1, h2, h3{
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+} /*Police des titres tel que spécifié dans laconsigne*/
+
+p{
+    color: #333;
+} /*Couleur remplacement du noir tel qu'indiqué*/
+
+header{
+    background-color: #C55394;
+    height:10vh;
+    }
+    /*Le header est divisé en trois parties: un span pour le logo, une div pour l'espace vacant et la nav pour le menu*/
+    header span{
+        width: 12%;
+        height: 100%;
+        color: #fff;
+        float: left;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: 'Courgette', cursive;
+    }
+    header div{
+        width: 63%;
+        height: 100%;
+        float: left;
+    }
+    header nav{
+        width: 25%;
+        height: 100%;
+        float: left;
+        }
+        header nav ul{
+            height: 100%;
+            width: 100%;
+            }
+            header nav ul li{
+                display: inline-block;
+                height: 60%;
+                width: 32%;
+                text-align: center;
+                vertical-align: middle;
+                color: #fff;
+                }
+                header ul li a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 25%;
+                    color: #fff;
+                }
+            header nav ul li a:hover{
+                background-color: #EB43A3;
+            }
+            /*Mise en forme de la nav avec hover et balises a en liens internes tel que définit dans la consigne. Les balises a sont a l'intérieur des balises li et pas l'inverse tel qu'il est normé par le w3c*/
+    header nav:after{
+        clear: both;
+    }
+    /*Le clear both est fait avec un pseudo-sélécteur :after plutot qu'avec une classe clear dans le but d'éviter d'encombrer inutilement l'html*/
+
+section{
+    height: 183vh;
+    }
+    h1{
+        padding-top: 60px;
+        font-style: italic;
+        color: #C55394;
+        display: block;
+        height: 150px;
+        width: 30%;
+        margin: auto;
+        background: url('../img/rainbow.png') no-repeat;
+        background-position: top center;
+        text-align: center;
+        vertical-align: middle;
+    }
+    section .container1{
+        background-color: #FFFFFF;
+        margin: 0 15% 3% 15%;
+        height: 80%;
+        width: 70%;
+        border-radius: 15px;
+        padding: 2%;
+        box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25);
+    }
+    /*Container principal de la section, les marges sont la pour laisser aparaitre le background tel que sur le screenshoot. Le box shadow couvre les 4 cotés */
+    section .block:nth-child(1){
+        height: 25%;
+        width: 100%;
+    }
+    section .block:nth-child(2){
+        height: 30%;
+        width: 100%;
+    }
+    section .block:nth-child(3){
+        height: 45%;
+        width: 100%;
+    }
+    /*Définition des tailles des trois sous-conteneurs chacuns titrés d'un h2*/
+    section h2{
+        color: #EB43A3;
+        padding: 35px 0 15px 0;
+    }
+    section .licorne{
+        width: 25%;
+        float: left;
+        }
+        section figure{
+            height: 300px;
+            width: 300px;
+        }
+        section figure:hover{
+            transform: scale(1.1);
+        }
+            section figcaption{
+                width: 300px;
+                height: 30px;
+                color: #fff;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.7);
+                position: relative;
+                top: -34px;
+            }
+            /*Les images sont légendés, chaque image ainsi que sa légende associée est contenue dans une balise figure. Les légendes, dans les balises figcaption, sont positionnées en relative avec une position top négative pour les superposer en bas de l'image. Le hover est fait sans transition avec un attribut transform*/
+    iframe{
+        height: 80%;
+        width: 60%;
+        margin: 20px;
+        float: left;
+        border: 0;
+        }
+        /*Google image fournit ses intégration de maps avec du style intégré. J'ai préféré le supprimer et régler ca moi-meme dans le css*/
+    section .info{
+        padding: 40px 10px 10px 10px;
+        }
+        section .info h3{
+            color: #EB43A3;
+        }
+        section #email{
+            height: 30px;
+            width: 200px;
+        }
+        section #submit{
+            height: 23px;
+            width: 75px;
+            background-color: #C55394;
+            border-radius: 5px;
+            border: 0;
+            font-weight: 400;
+            color: #fff;
+        }
+        /*Formulaire contenant une input type email et un submit. Dirige vers newsletter.php inexistant*/
+footer{
+    height: 7vh;
+    background-color: #C55394;
+    }
+    footer div{
+        height: 100%;
+        width: 85%;
+        float: left;
+    }
+    footer span{
+        height: 100%;
+        width: 12%;
+        float: left;
+        color: #fff;
+        text-align: right;
+    }
+    /*Une div est utilisée pour remplir l'espace vacant a l'instat du header. Un span est utilisé pour le copyright*/

@@ -1,0 +1,56 @@
+body{
+    margin-bottom: 30px;
+    padding-top: 50px;
+    background-color: #f1f1f1;
+}
+
+/* Couleur perso de la navbar */
+
+.navbar-custom{
+    background: #061339;
+    border-color: #061339;
+}
+
+
+.navbar-custom .navbar-brand{
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Merienda', cursive;
+}
+
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:hover{
+    color: #7986ac;
+}
+
+/*Le premier bloc*/
+#masterhead{
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat;
+    background-color: #B9CDFF;
+}
+
+#masterhead h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Merienda', cursive;
+    padding: 50px 0;
+    margin: 20px auto;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+
+/* Le contenu avec le carousel */
+
+#content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+#content aside h2{
+    color: #2F4073;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    margin: 10px auto 20px;
+    text-align: center;
+}
